@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 x:Class="MobileAppOne.MainPage">
+
+    <Grid>
+
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                <GradientStop Color="White" Offset="0.1"/>
+                <GradientStop Color="#187f7d" Offset="1.0"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <Image  Source="logo"  WidthRequest="50" Grid.Row="1"/>
+
+        <StackLayout VerticalOptions="Center" Spacing="20" Margin="20" Grid.Row="2">
+            <Entry x:Name="UsernameEntry" FontSize="20" Placeholder="Username"></Entry>
+            <Entry x:Name="PasswordEntry" FontSize="20" IsPassword="True" Placeholder="Password"></Entry>
+            <Button Clicked="InfoLabel_Clicked" Text="Login" CornerRadius="10" TextColor="White" Background="#2c3877"></Button>
+            <Label x:Name="InfoLabel" FontSize="20" HorizontalOptions="Center"></Label>
+        </StackLayout>
+
+
+
+    </Grid>
+        
+
+</ContentPage>
